@@ -251,6 +251,17 @@ nav ul li{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* Second Layer Design */
 
 .secondLayer{
@@ -297,6 +308,13 @@ nav ul li{
     color: var(--white);
     background: var(--lightgreen);
     padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.secondLayer .row a:hover{
+    background-color: black;
+    color: white;
 }
 
 
@@ -306,9 +324,12 @@ nav ul li{
 
 
 
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Philosopher', sans-serif;
-font-family: 'Roboto', sans-serif; */
+
+
+
+
+
+
 
 
 
@@ -387,6 +408,7 @@ font-family: 'Roboto', sans-serif; */
     color: var(--white);
     text-align: center;
     opacity: 0;
+    transition: all 0.3s ease;
 }
 
 .innerBox a{
@@ -448,7 +470,257 @@ font-family: 'Roboto', sans-serif; */
     }
 
     .thirdLayer .fourImageHolder  .MyLargeImg-row-2,.thirdLayer .fourImageHolder  .MyLargeImg-row-1,.thirdLayer .fourImageHolder  .MySmallImg-row-2,.thirdLayer .fourImageHolder  .MySmallImg-row-1{
-        border: 10px solid white;
+        border: 10px solid white;   
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Fouth Layer Design */
+
+.fourthLayer{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fourthLayer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fourthLayer .row .fourthlayerBox p{
+    font-family: 'Philosopher', sans-serif;
+    color: #868686;
+    letter-spacing: 0.1px;
+}
+
+.fourthLayer .row .fourthlayerBox h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fourthLayer .row .fourthlayerBox p span{
+    text-decoration: underline;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fifth Layer design */
+
+.fifthlayerBox{
+    width: 100%;
+    height: 90vh;
+    background: url("../images/mainImg/main2.jpg")center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fifthlayerBox .centeralBox{
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.fifthlayerBox .centeralBox:hover{
+    background: black;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.fifthlayerBox .centeralBox h1{
+    color: white;
+}
+.fifthlayerBox .centeralBox a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sixth layer Design */
+.sixthLayer{
+    min-height: 80vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sixthLayer .sixthLayerRow{
+    min-height: 80vh;
+}
+.sixthLayer .sixthLayerFirstBox{
+    min-height: 80vh;
+    background: url("../images/shoes/img12.jpg")center center/cover;
+}
+
+.sixthLayer .sixthLayerSecondBox{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1px;
+}
+
+.sixthLayer .sixthLayerSecondBox .sixthLayerInnerContent{
+    width: 70%;
+    text-align: center;
+}
+
+.sixthLayer .sixthLayerSecondBox a{
+    text-decoration: none;
+    color: var(--white);
+    background: var(--lightgreen);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.sixthLayer .sixthLayerSecondBox a:hover{
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width:940px){
+.sixthLayer .sixthLayerSecondBox .sixthLayerInnerContent{
+    width: 80%;
+}
+}
+
+@media only screen and (max-width:576px){
+    .sixthLayer .sixthLayerRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sixthLayer .sixthLayerSecondBox .sixthLayerInnerContent{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seventh Layer Design */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+.SeventhLayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SeventhLayer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.SeventhLayer .SeventhLayerfirstBox h2{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.SeventhLayer .SeventhLayerfirstBox p{
+    font-family: 'Roboto', sans-serif; 
+}
+
+.SeventhLayer .SeventhLayerfirstBox a{
+    text-decoration: none;
+    color: var(--white);
+    background: var(--lightgreen);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.SeventhLayer .SeventhLayerfirstBox a:hover{
+    background-color: black;
+    color: white;
 }
