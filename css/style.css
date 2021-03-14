@@ -45,6 +45,9 @@ nav{
     justify-content: space-around;
     background-color: var(--black);
     color: var(--footer-Text);
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 nav h1{
@@ -84,6 +87,10 @@ nav ul li a:hover{
 }
 
 @media only screen and (max-width:768px){
+
+nav ul li{
+    margin-top: 0px;
+}
 
 .burger{
     display: block;
@@ -225,4 +232,223 @@ nav ul li a:hover{
         font-size: 50px;
         text-align: center;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Second Layer Design */
+
+.secondLayer{
+    width: 100%;
+    min-height: 50vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secondLayer .row{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.secondLayer .row h2{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.secondLayer .row p{
+    font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   letter-spacing: 0.2px;
+}
+
+.secondLayer .row p span{
+    font-weight: bolder;
+}
+
+.secondLayer .row .mytag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondLayer .row a{
+    text-decoration: none;
+    color: var(--white);
+    background: var(--lightgreen);
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+
+
+
+
+
+
+
+
+
+/* Third Layer Design */
+.thirdLayer{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.thirdLayer .fourImageHolder{
+    height: 80vh;
+}
+
+.thirdLayer .singleImageHolder{
+    background: url("../images/shoes/img7.jpg")center center/cover;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thirdLayer .fourImageHolder .MyLargeImg-row-1{
+    border: 10px solid white;
+    background: url("../images/shoes/img5.jpg")center center/cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thirdLayer .fourImageHolder .MySmallImg-row-1{
+    border: 10px solid white;
+    border-left: 0px;
+    background: url("../images/shoes/img2.jpg")center center/cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thirdLayer .fourImageHolder .MySmallImg-row-2{
+    border-left: 10px solid white;
+    background: url("../images/shoes/img4.jpg")center center/cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thirdLayer .fourImageHolder  .MyLargeImg-row-2{
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    background: url("../images/shoes/img1.jpg")center center/cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.innerBox{
+    /* display: none; */
+    color: var(--white);
+    text-align: center;
+    opacity: 0;
+}
+
+.innerBox a{
+    color: var(--white);
+}
+
+.innerBox:hover{
+    background: black;
+    padding: 30px;    
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:768px){
+    .thirdLayer .mygridrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .thirdLayer{
+        min-height: 80vh;
+        border-bottom: 10px solid white;
+    }
+
+    .thirdLayer .singleImageHolder{
+       display: none;
+    }
+}
+
+
+@media only screen and (max-width:450px){
+    .thirdLayer .fourImageHolder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .thirdLayer .row-1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .thirdLayer .row-2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .thirdLayer .fourImageHolder  .MyLargeImg-row-2,.thirdLayer .fourImageHolder  .MyLargeImg-row-1,.thirdLayer .fourImageHolder  .MySmallImg-row-2,.thirdLayer .fourImageHolder  .MySmallImg-row-1{
+        border: 10px solid white;
+    }
+
 }
