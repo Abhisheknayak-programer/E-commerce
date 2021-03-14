@@ -681,18 +681,18 @@ nav ul li{
 
 
 
+
+
+
+
+
 /* Seventh Layer Design */
-
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Philosopher', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
-
 .SeventhLayer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
 
 .SeventhLayer .row{
@@ -702,7 +702,9 @@ font-family: 'Roboto', sans-serif; */
     flex-direction: column;
     text-align: center;
 }
-
+.SeventhLayer .row .col{
+    padding: 20px;
+}
 
 .SeventhLayer .SeventhLayerfirstBox h2{
     font-family: 'Philosopher', sans-serif;
@@ -723,4 +725,215 @@ font-family: 'Roboto', sans-serif; */
 .SeventhLayer .SeventhLayerfirstBox a:hover{
     background-color: black;
     color: white;
+}
+
+
+.SeventhLayer .SeventhLayerSecondBox{
+    font-family: 'Roboto', sans-serif; 
+}
+
+.SeventhLayer .SeventhLayerSecondBox button{
+    text-decoration: none;
+    color: var(--white);
+    background: var(--lightgreen);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.SeventhLayer .SeventhLayerSecondBox button:hover{
+    background-color: black;
+    color: white;
+}
+
+.SeventhLayer .SeventhLayerSecondBox .formBox input{
+    padding: 10px;
+    outline-color: rgb(36, 1, 65);
+}
+
+@media only screen and (max-width:768px){
+    .formBox{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .formBox input,.formBox button{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Eigth Layer Design */
+
+footer .footerSection{
+    background: var(--black);
+    color: var(--footer-Text);
+    min-height: 30vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .footerSection .Footerlogo{
+    height: 30vh;
+    font-family: 'Philosopher', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .footerSection .Footerlogo h1{
+    font-size: 50px;
+    letter-spacing: 0.1px;
+}
+
+footer .footerSection .FooterLayer-1{
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+footer .footerSection .FooterLayer-2{
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+footer .footerSection .FooterLayer-3{
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width:768px){
+    footer .footerSection .FooterLayer-3,footer .footerSection .FooterLayer-1,footer .footerSection .FooterLayer-2{
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width:576px){
+    footer .footerSection .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Social Media Layer Design */
+
+.SocialMediaLastLayer{
+    min-height: 10vh;
+    background: var(--lightblack);
+    color: var(--footer-Text);
+    display: flex;
+}
+
+.SocialMediaLastLayer .para{
+    line-height: 10vh;
+    text-align: center;
+    width: 50%;
+    color: white;
+}
+
+.SocialMediaLastLayer .socialMedia{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.SocialMediaLastLayer .socialMedia a{
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--footer-Text);
+}
+
+@media only screen and (max-width:768px){
+    .SocialMediaLastLayer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+
+    .SocialMediaLastLayer .para{
+        width: 100%;
+        font-size: 13px;
+        padding: 0px 10px;
+    }
+
+    .SocialMediaLastLayer .socialMedia{
+        width: 100%;
+    }
 }
