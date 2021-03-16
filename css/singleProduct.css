@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Philosopher:ital,wght@0,700;1,400&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    z-index: 10;
+}
+
+/* Fonts Used Are In Commented Form Use This when You Need Changes */ 
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+
+.singleProductDesignLayer{
+    padding:50px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.singleProductDesignLayer{
+    background: #fff;
+}
+
+.singleProductDesignLayer .SingleProductCard{
+    overflow: hidden;
+}
+
+.singleProductDesignLayer .SingleProductCard img{
+    transition: all 5s ease;
+}
+
+.singleProductDesignLayer .SingleProductCard img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.singleProductDesignLayer .SingleProductContent h2{
+    color: #f8971d;
+    font-family: 'Roboto', sans-serif;
+}
+
+.singleProductDesignLayer .SingleProductContent h2 span{
+    color: grey;
+    padding-right:10px;
+}
+
+.singleProductDesignLayer .SingleProductContent h4 span{
+    color: #f8971d;
+}
+
+.singleProductDesignLayer .SingleProductContent a{
+    border: 2px solid #f8971d;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f8971d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.singleProductDesignLayer .SingleProductContent a:hover{
+    background: #f8971d;
+    color: #fff;
+}
+
+
+@media only screen and (max-width:998px){
+.singleProductDesignLayer .SingleProductContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+}
+
+
+@media only screen and (max-width:576px){
+    .singleProductDesignLayer .row{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .singleProductDesignLayer{
+        padding: 20px;
+    }
+
+    .singleProductDesignLayer .row .SingleProductCard{
+        margin-bottom: 10px;
+    }
+}
