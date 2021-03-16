@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Philosopher:ital,wght@0,700;1,400&family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #dddddd;
+}
+
+/* Fonts Used Are In Commented Form Use This when You Need Changes */ 
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+.shopHeading{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav{
+    z-index: 10;
+}
+
+
+.ProductDisplayLayer .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.BigProductCard{
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
+.BigProductCard img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+
+.BigProductCard img:hover{
+    transform: scale(1.3);
+}
+
+
+@media only screen and (max-width:576px){
+    .ProductDisplayLayer .row{
+        flex-direction: column;
+        margin: 0px 30px;
+    }
+
+    .ProductDisplayLayer .row .col{
+        margin-bottom: 30px;
+    }
+    .shopHeading{
+        letter-spacing: 1px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product Layer Design */
+.products h1{
+    text-align: center;
+    color: rgb(233, 167, 25);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.products .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.products .productCard{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.products .productCard:hover img{
+    transform: scale(1.1);
+}
+
+.products .productCard:hover{
+    box-shadow: 0px 7px 2px rgba(0,0,0,0.5);
+}
+
+.products .productCard img{
+    width: 100%;
+    padding: 10px 0px;
+    transition: all 0.3s ease;
+}
+
+.products .productCard h3{
+    color: rgb(233, 167, 25);
+}
+
+.products .productCard p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.products .productCard p span{
+    color: grey;
+}
+
+@media only screen and (max-width:768px){
+    .products .productCard{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .products .row{
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+}
