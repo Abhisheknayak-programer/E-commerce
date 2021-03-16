@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Philosopher:ital,wght@0,700;1,400&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    z-index: 10;
+}
+
+/* Fonts Used Are In Commented Form Use This when You Need Changes */ 
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.InfoLayer{
+    background: url("https://images.unsplash.com/photo-1512473951813-4196b10edfa4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1864&q=80")center center/cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.InfoLayer .row {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.InfoLayer .row .col{
+    background: black;
+    color: white;
+    padding: 30px;
+}
+
+.infoBox-1 .infoBox-1-innerBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.infoBox-1 .infoBox-1-innerBox label{
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.infoBox-1 .infoBox-1-innerBox input,textarea{
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.infoBox-1  .submissionButton{
+    padding: 5px 20px;
+    font-weight: bold;
+    color: #f8971d;
+    border: 2px solid #f8971d;
+    transition: all 0.2s ease;
+}
+
+.infoBox-1  .submissionButton:hover{
+    background: #f8971d;
+    color: white;
+}
