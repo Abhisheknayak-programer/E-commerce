@@ -70,6 +70,26 @@ font-family: 'Roboto', sans-serif; */
 }
 
 
+
+
+/* Video section Css */
+
+.productVideoSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productVideoSection .productVideo video{
+    width: 350px;
+    height: 350px;
+    outline: none;
+    border: none;
+}
+
+
+
+
 @media only screen and (max-width:998px){
 .singleProductDesignLayer .SingleProductContent{
     display: flex;
@@ -95,4 +115,19 @@ font-family: 'Roboto', sans-serif; */
     .singleProductDesignLayer .row .SingleProductCard{
         margin-bottom: 10px;
     }
+}
+
+
+
+@media only screen and (max-width:360px){
+.productVideoSection{
+    overflow: hidden;
+}
+
+.productVideoSection .productVideo video{
+    width: 250px;
+    height: 250px;
+    outline: none;
+    border: none;
+}
 }
